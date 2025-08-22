@@ -5,10 +5,10 @@ app = Flask(__name__)
 @app.route('/')  #declarando o caminho raiz
 def home(): #declarando a função
     return f'''                                                     #usa o f pois usarei parametros
-            <h1>Avaliação contínua: Aula 030</h1>                 #Declarando o titulo que estara na pgina
+            <h1>Avaliação contínua: Aula 030</h1>                 #Declarando o titulo que estara na pagina
                 <ul>                                              #declarando lista
                     <li><a href="{url_for('home')}">Home</a></li> #item da lista chamado nome e vai direcionar para a url Home 
-                    <li><a href="{url_for('identificacao', nome='Lais Gabriele', prontuario='PT3025993', instituicao='IFSP')}">Identificação</a></li>   #Item da lista chamado identificação, que direcionara para url, essa url vai ter a função identificação e os paramtros colocados
+                    <li><a href="{url_for('identificacao', nome='Lais Gabriele', prontuario='PT3025993', instituicao='IFSP')}">Identificação</a></li>   #Item da lista chamado identificação, que direcionara para url, essa url vai ter a função identificação e os parametros colocados
                     <li><a href="{url_for('contexto_requisicao')}">Contexto da requisição</a></li>   #a url direcionara para função contextorequisiçao
                 </ul>
             '''
